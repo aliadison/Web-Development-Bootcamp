@@ -42,7 +42,7 @@ input:checked+p {
 input[type="checkbox"] {
   margin: 20px;
   width: 25px;
-  height: 25px;
+  height: 25px; 
 }
 
 p {

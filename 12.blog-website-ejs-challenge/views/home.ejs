@@ -1,0 +1,12 @@
+<%- include("partials/header") -%>
+
+<h1>Home</h1>
+<p><%= homeContent %></p>
+
+<% postArr.forEach((post) => {%>
+<h1><%= post.title %></h1>
+<% const text = post.content.substring(0,100)+" ... "; %>
+<p><%= text %><a href="/posts/<%= post.title %>">Read More</a></p>
+<% }); %> 
+
+<%- include("partials/footer") -%>
